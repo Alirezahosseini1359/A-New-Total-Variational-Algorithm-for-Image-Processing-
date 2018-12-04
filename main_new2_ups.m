@@ -94,31 +94,6 @@ function t = opL(u)
         [u(2:end,:,4); zeros(1,width)]+...
         [zeros(height,1) u(:,1:end-1,4)]+...
                 [[zeros(height-1,1) u(2:end,1:end-1,4)]; zeros(1,width)])/4; 
-
-    %-----------------------------------------------------------------------------------------------------------------
-% 	t(:,:,1,1)=u(:,:,1);
-% 	t(:,:,2,1)=([[zeros(height-1,1) u(2:end,1:end-1,2)]; zeros(1,width)]+...
-%         [zeros(height,1) u(1:end,1:end-1,2)]+[u(2:end,1:end,2); zeros(1,width)]+u(:,:,2))/4; 		
-%     t(1:end-1,1,2,1)=(u(1:end-1,1,2)+u(2:end,1,2))/4; 
-% 	t(end,1:end,2,1)= 1/4*(u(end,1:end,2)+[0 u(end,1:end-1,2)]);
-%     t(:,:,3,1)=1/2*(u(:,:,3)+[zeros(1,width) ; u(1:end-1,:,3)]); 
-%     t(:,:,2,2)=u(:,:,2);
-% 	t(:,:,1,2)=(u(:,:,1)+[zeros(1,width); u(1:end-1,1:end,1)]+[u(1:end,2:end,1) zeros(height,1)]+...
-%         [zeros(1,width);[u(1:end-1,2:end,1) zeros(height-1,1)]])/4; 
-% 	%t(1,1:end-1,1,2)=(u(1,1:end-1,1)+u(1,2:end,1))/4; 	
-%     %t(1:end,end,1,2)= 1/4*(u(1:end, end,1)+[0 ;u(1:end-1,end,1)]);
-%     t(:,:,3,2)=1/2*(u(:,:,3)+[zeros(height,1) u(:,1:end-1,3)]); 
-%     t(:,:,1,3) = (u(:,:,1)+[zeros(1,width) ; u(1:end-1,:,1)])/2; 
-% 	%t(1,:,1,3) = u(1,:,1)/2;
-% 	t(:,:,2,3) = (u(:,:,2)+[zeros(height,1) u(:,1:end-1,2)])/2; 
-% 	%t(:,1,2,3) = u(:,1,2)/2;
-%     t(:,:,3,3) =1/4*(u(:,:,3)+[zeros(1,width) ; u(1:end-1,:,3)]+[zeros(height,1) u(:,1:end-1,3)]+[zeros(1,width);...
-%         [zeros(height-1,1) u(1:end-1,1:end-1,3)]]);
-%     t(:,:,1,4)=1/2*(u(:,:,1)+[u(1:end,2:end,1) zeros(height,1)]);
-%     %t(:,end,1,4)=1/2*(u(:,end,1));
-%     t(:,:,2,4)=1/2*(u(:,:,2)+[u(2:end,:,2); zeros(1,width)]);
-%     %t(end,:,2,4)=1/2*(u(end,:,2));
-%     t(:,:,3,4)=u(:,:,3);
     end
 
 function u = opLadj(t)
