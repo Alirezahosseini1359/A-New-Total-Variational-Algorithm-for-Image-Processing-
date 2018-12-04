@@ -1,4 +1,4 @@
-function x=main_proposed(y,lambda) 
+function x=main_condat(y,lambda) 
 	
 	Nbiter= 500;
 	tau = 0.99/8;
