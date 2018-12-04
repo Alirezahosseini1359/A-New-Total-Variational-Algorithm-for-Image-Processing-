@@ -59,16 +59,16 @@ end
 t2=psnr(x02,z);
 
 s=0.05;
-x03=main_proposed(yy,s);
+x03=main_condat(yy,s);
 s=s+0.01;
-x=main_proposed(yy,s);
+x=main_condat(yy,s);
 d=x03;
 dd=x;
 if psnr(x,z)> psnr(x03,z)
        while psnr(x,z)> psnr(x03,z)
            x03=x;
            s=s+.01;
-           x=main_proposed(yy,s);
+           x=main_condat(yy,s);
        end
        a3=s-0.01;
 else
@@ -77,11 +77,11 @@ x03=d;
 x=dd;
 if psnr(x,z)< psnr(x03,z)
     s=s-0.01;
-x=main_proposed(yy,s);
+x=main_condat(yy,s);
        while psnr(x,z)> psnr(x03,z)
            x03=x;
            s=s-.02;
-           x=main_proposed(yy,s);
+           x=main_condat(yy,s);
        end
        a3=s+0.01;
 end
