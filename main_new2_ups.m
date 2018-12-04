@@ -1,3 +1,8 @@
+%A-New-Total-Variational-Algorithm-for-Image-upscaling
+%Code is provided by Alireza Hosseini
+%hosseini.alireza@ut.ac.ir
+%University of Tehran
+% Permission is granted for anyone to copy, use, modify, or distribute this program and accompanying programs and documents for any purpose, provided this copyright notice is retained and prominently displayed, along with a note saying that the original programs are available from the supplementrary material of our paper
 function [x,t]=main_new2_ups(y,xref)
 	
 	Nbiter= 500;
