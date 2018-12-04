@@ -13,10 +13,10 @@
 # "main_isotropic" solves denoising problem for given grayscale image "x" and regularization parameter lambda via isotropic TV.
 # "main_lambda" finds optimal regularization parameter "lambda" for any couple of image and TV.
  # mathlab m-files for "upscaling" problem are as follows: 
-# "main_isotropic_ups" solves upscaling problem for a given image via isotropic TV.
-# "main_upwind_ups" solves upscaling problem for a given image via upwind TV.
-# "main_cond_ups" solves upscaling problem for a given image via Condat's TV.
-# "main_new2_ups" solves upscaling problem for a given image via new proposed TV (this code is original).
+# "main_isotropic_ups" for a given image, the image is downscaled by factor 2, then will be upscaled via isotropic TV.
+# "main_upwind_ups"  for a given image, the image is downscaled by factor 2, then will be upscaled via upwind TV.
+# "main_cond_ups" for a given image, the image is downscaled by factor 2, then will be upscaled via Condat's TV.
+# "main_new2_ups" for a given image, the image is downscaled by factor 2, then will be upscaled via new proposed TV (this code is original).
 
 
 
