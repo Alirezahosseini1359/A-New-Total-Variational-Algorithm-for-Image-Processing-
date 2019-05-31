@@ -1,5 +1,5 @@
 # New Discretization of Total Variation Functional for Image Processing Tasks
-# proposed.m, proposed_upscaling.m, tgv_upscaling.m Codes are provided by Alireza Hosseini
+# proposed.m, proposed_upscaling.m, tgv_upscaling.m and DEMO files are provided by Alireza Hosseini
 # hosseini.alireza@ut.ac.ir
 # University of Tehran 
 # Permission is granted for anyone to copy, use, modify, or distribute this program and accompanying programs and documents for any purpose, provided this copyright notice is retained and prominently displayed, along with a note saying that the original programs are available from the supplementrary material of our paper
